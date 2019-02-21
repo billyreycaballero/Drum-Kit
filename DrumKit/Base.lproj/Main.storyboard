@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfQ-ge-PsA">
+                                <rect key="frame" x="16" y="416" width="165" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Start Sound">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playLongSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvY-Rn-zy8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWK-MO-gG9">
+                                <rect key="frame" x="16" y="253" width="165" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Beat 3">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBeat3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BqT-49-HgB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-Br-muG">
+                                <rect key="frame" x="194" y="253" width="165" height="150"/>
+                                <color key="backgroundColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Beat 4">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBeat4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qBO-XB-G2b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40f-Cx-EcK">
+                                <rect key="frame" x="16" y="90" width="165" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Ij9-kW-LpJ"/>
+                                    <constraint firstAttribute="width" constant="165" id="Nza-bA-2iv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Beat 1">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBeat1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMa-Kj-roe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpY-Ch-WGh">
+                                <rect key="frame" x="194" y="90" width="165" height="150"/>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Beat 2">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBeat2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6nC-Pe-DZt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtk-5p-ZOi">
+                                <rect key="frame" x="194" y="416" width="165" height="150"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Stop Sound">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopLongSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5HC-tj-VZN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="width" secondItem="CWK-MO-gG9" secondAttribute="width" id="0DD-dY-hD8"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="height" secondItem="CWK-MO-gG9" secondAttribute="height" id="6md-Y0-X2v"/>
+                            <constraint firstItem="40f-Cx-EcK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="766-2u-ewr"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="height" secondItem="jtk-5p-ZOi" secondAttribute="height" id="9FW-Kd-jk1"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="top" secondItem="CWK-MO-gG9" secondAttribute="bottom" constant="13" id="AzT-EM-QfK"/>
+                            <constraint firstItem="CWK-MO-gG9" firstAttribute="top" secondItem="40f-Cx-EcK" secondAttribute="bottom" constant="13" id="CpU-k6-mTb"/>
+                            <constraint firstItem="oMn-Br-muG" firstAttribute="baseline" secondItem="CWK-MO-gG9" secondAttribute="baseline" id="Cz2-TA-AhF"/>
+                            <constraint firstItem="BpY-Ch-WGh" firstAttribute="width" secondItem="40f-Cx-EcK" secondAttribute="width" id="FBu-Jr-mnE"/>
+                            <constraint firstItem="oMn-Br-muG" firstAttribute="width" secondItem="CWK-MO-gG9" secondAttribute="width" id="InY-Fj-gQa"/>
+                            <constraint firstItem="BpY-Ch-WGh" firstAttribute="centerY" secondItem="40f-Cx-EcK" secondAttribute="centerY" id="RE0-Vc-VvT"/>
+                            <constraint firstItem="BpY-Ch-WGh" firstAttribute="height" secondItem="40f-Cx-EcK" secondAttribute="height" id="SRr-Hh-oxZ"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="baseline" secondItem="jtk-5p-ZOi" secondAttribute="baseline" id="WW1-YN-Ojt"/>
+                            <constraint firstItem="CWK-MO-gG9" firstAttribute="height" secondItem="40f-Cx-EcK" secondAttribute="height" id="Wu7-nJ-tDM"/>
+                            <constraint firstItem="BpY-Ch-WGh" firstAttribute="leading" secondItem="40f-Cx-EcK" secondAttribute="trailing" constant="13" id="ZHq-qy-gT0"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="width" secondItem="jtk-5p-ZOi" secondAttribute="width" id="ZYh-uP-r0E"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="centerY" secondItem="jtk-5p-ZOi" secondAttribute="centerY" id="bxm-au-kqW"/>
+                            <constraint firstItem="oMn-Br-muG" firstAttribute="centerY" secondItem="CWK-MO-gG9" secondAttribute="centerY" id="deB-5l-zLN"/>
+                            <constraint firstItem="CWK-MO-gG9" firstAttribute="centerX" secondItem="40f-Cx-EcK" secondAttribute="centerX" id="g9g-ys-aLa"/>
+                            <constraint firstItem="CWK-MO-gG9" firstAttribute="width" secondItem="40f-Cx-EcK" secondAttribute="width" id="hAM-VH-P89"/>
+                            <constraint firstItem="oMn-Br-muG" firstAttribute="leading" secondItem="CWK-MO-gG9" secondAttribute="trailing" constant="13" id="iRP-7F-83C"/>
+                            <constraint firstItem="40f-Cx-EcK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="jbz-sI-TCk"/>
+                            <constraint firstItem="oMn-Br-muG" firstAttribute="height" secondItem="CWK-MO-gG9" secondAttribute="height" id="ktZ-6w-lBo"/>
+                            <constraint firstItem="BpY-Ch-WGh" firstAttribute="baseline" secondItem="40f-Cx-EcK" secondAttribute="baseline" id="nYI-nl-jmn"/>
+                            <constraint firstItem="jtk-5p-ZOi" firstAttribute="leading" secondItem="YfQ-ge-PsA" secondAttribute="trailing" constant="13" id="r8H-re-tcr"/>
+                            <constraint firstItem="YfQ-ge-PsA" firstAttribute="centerX" secondItem="CWK-MO-gG9" secondAttribute="centerX" id="t6b-aG-DCJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startSoundButton" destination="YfQ-ge-PsA" id="zLh-hg-xc0"/>
+                        <outlet property="stopSoundButton" destination="jtk-5p-ZOi" id="oTL-9N-mSP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
